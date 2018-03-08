@@ -194,7 +194,7 @@ nav li a {
    
 }
 
-.menu-items {
+.menu-items, .fa-hand-o-right {
     
    display: none;
     
@@ -272,11 +272,15 @@ figure {
 .price {
     
     display: block;
+    text-align: center;
 }
 
 .pDetail {
     
-    
+    font-size: 0.8em;
+    margin: 0 auto;
+    padding: 0 25px;
+    text-align: center;
 }
 
 .productBox {
@@ -299,4 +303,71 @@ video {
     font-family: serif;
     margin: 0;
     padding: 50px;
+}
+
+
+/* ===============================================
+--- Mobile styles - 568px screen resolution ---- 
+==================================================*/
+@media screen and (min-width: 568px){
+    
+    .pDetail {
+        
+        padding: 0;
+        height: 50px;
+        margin-bottom: 10px;
+        color: green;
+        
+        
+    }
+    
+    .slogan {
+        
+        padding: 100px 4vw 0 0
+    }
+}
+
+/* ===============================================
+--- Tablet styles - 568px screen resolution ---- 
+==================================================*/
+
+@media screen and (min-width: 768pxh) {
+    
+    
+    #home{
+        
+        height: 80vh;
+    }
+    
+    .container {
+        
+        width: 100%;
+    }
+}
+
+.containerfilter {
+    
+    background: linear-gradient(rgba(0,0,0,0.8), rgba (0,0,0,0.8)), url(../img/trainerContactBackground.jpg)
+}
+    
+
+.white {
+    
+    text-align: center;
+    color: gold
+}
+
+.contactDescription {
+    
+    text-align: center;
+    color: gold;
+}
+
+.boldNumber {
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1px;
+    background-color: #352650;
+    text-align: center
 }
