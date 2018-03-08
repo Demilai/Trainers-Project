@@ -1,0 +1,302 @@
+/* ===========================================================*/
+
+/* THIS SHOPPING WEBSITE  IS FOR TRAIMNING ONLY */
+
+/*==============================================================*/
+
+
+/*
+Website colour theme
+
+Main Colours:
+
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple*/
+
+/* ============================================ 
+/* mobile default layout - Global Styles */
+
+/*=============================================== */
+
+html {
+    
+    -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    
+    
+    
+}
+
+
+
+
+
+* {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    
+    
+}
+
+/*univeral style*/
+
+a {
+    
+    text-decoration: none;
+}
+
+.container {
+    
+  width: 80%;
+  height:100%;
+  margin: 100px auto;
+    
+    
+    
+}
+
+/* embedded fonts */
+
+@font-face {
+    
+    font-family; 28_days;
+    src: url(../external/font/28_days_later_webfont.ttf);
+    font-weight:normal;
+    font-style: normal;
+}
+
+/*================== 
+     HOME STYLES 
+====================*/
+
+img, video {
+    width: 100%;
+}
+
+body {
+    
+    font-family: serif;
+    font-size: 16px;
+    color: #b57fff;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+#home {
+    position: relative;
+    background-image: url(../img/trainerHomePage.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+/*    height: auto;*/
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    
+    position:absolute;
+    top:3px;
+    left:10px;
+    width: 50px;
+}
+
+.navC {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    background-color: #0f0d26;
+    height: auto;
+    
+    }
+
+.menu-items {
+    
+    display: inline;
+    list-style: none; /*this takes the bullet point style off the list*/
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li a {
+    
+    color: #fff;
+    text-align: right;
+    display: block;
+    padding: 15px 10px 15px 0;
+}
+
+.cartIcon {
+    
+    position: absolute;
+    left: 50vw;
+    width:  50px; 
+    top: 15px;
+    z-index: 10;
+    
+}
+
+.fa-shopping-cart {
+    color: #352650;
+    font-size: 2em;
+
+}
+
+/* This is the code for the 3 line bar menu */
+.navBtn{
+    
+    font-size: 2.5em;
+    display:block;
+    cursor: pointer;
+    padding: 7px;
+    text-align: center;
+    margin: 0 4vw 0 75vw;
+    width: 20%;
+    
+}
+
+.actionB {
+   
+    position: absolute;
+    top: 65vh;
+    left: 5vw;
+    
+}
+
+.newCollectionB{
+    
+ color: #fff;
+ border-radius: 5px 5px;  
+ -webkit-border-radius: 5px 5px;
+ -moz-border-radius: 5px 5px;
+ cursor: pointer;
+ background-color: #352652;
+ margin: 10px auto 0 auto;
+ padding: 15px 20px;
+ text-align: center;
+ outline: none;
+ border: 1px solid #fff; 
+    
+}
+
+.headerC {
+    
+    position: fixed;
+    width: 100%;
+   
+}
+
+.menu-items {
+    
+   display: none;
+    
+}
+
+.mainHeading {
+    
+    font-family: 'Lovers Quarrel', cursive,sans-serif;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    color: #fff;
+    margin: 50vh auto 0 auto 
+}
+
+.slogan {
+    
+    font-family: '28_days';
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: right;
+    color: #fff; 
+    padding: 200px 4vw 0 0;
+    
+}
+
+/* ===========================
+
+         Product Section
+
+============================= */
+
+h1 {
+    
+    font-size: 1.5em;
+    font-family: 'Mukta', sans-serif;
+    text-align: center; 
+    font-weight: lighter; 
+    
+}
+
+.productText{
+    
+    text-align: center;
+    
+}
+
+.addToCart{
+    
+   padding: 15px 20px;
+   display: block;
+    background-color: #352650;
+    border-radius: 5px 5px;
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px 5px;
+    border: 1px solid #100b1a;
+    
+}
+
+.addToCart a {
+    
+    color: #fff;
+}
+
+figure {
+    
+    cursor: pointer;
+    margin: 0;
+    
+}
+
+.price {
+    
+    display: block;
+}
+
+.pDetail {
+    
+    
+}
+
+.productBox {
+    
+ margin: 1%;
+ width: 230px;
+ padding: 0 25px;    
+    
+}
+
+video {
+    
+    padding: 40px;
+    margin: 2vw 2vh;
+}
+
+.aboutDescription {
+    
+    text-align: center;
+    font-family: serif;
+    margin: 0;
+    padding: 50px;
+}
