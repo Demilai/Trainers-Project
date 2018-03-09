@@ -9,6 +9,14 @@
 * CSS links 
 * scripts (javascript) -->   
     
+    <!-- WOW.JS SCRIPT -->
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <!-- GOOGLE MAPS API CDN -->
+    
+    <script src="http://maps.google.com/maps/api/js"></script>
     <!-- google font from the official site -->
     
      <link rel="stylesheet"
@@ -18,6 +26,9 @@
           href="https://fonts.googleapis.com/css?family=Muka">
     
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!-- cdn for font awsome -->
+    
+    <!--Animate.css CDN -->
+    <link rel="stylesheet" href="External/css/animate%20(1).css">
     
     <meta charset="utf-8"> <!-- charset can be used as you can implement the use of the symbols such as !£& -->
     
@@ -36,16 +47,23 @@
     
     <!-- ============ HOME SECTION =========== -->
     
-          <section id= "home">
-         
-            <header class="headerC">
+          <section id= "home" class="selection1">
               
-        <div class = "logo">
+              <video class="myVideo" autoplay loop> <source src="Resources/video/homeVideo.mp4" type="video/mp4">
+              
+              video not supported by your browser
+              </video>
+              
+              <div class = "logo animated rollIn">
             
     
               <a href = "#home"><img src="Resources/img/logo.png" alt="Company Logo"/></a>  
               
               </div>
+         
+            <header class="headerC">
+              
+        
                 
                <div class="cartIcon">
                <i class="fa fa-shopping-cart"></i>
@@ -74,7 +92,7 @@
             </header> 
               <!-- ========== Navigation Section ENDS ========== -->
          
-        <h1 class="slogan"> Exclusive <br /> Trainers </h1>
+        <h1 class="slogan wow slideInLeft" data-wow-delay="0.5s"> Exclusive <br /> Trainers </h1>
               
               <div class="actionB">
               <button href="" class="newCollectionB"> New Arrivals </button>
@@ -93,9 +111,12 @@
          <!-- ========= pRODUCT SECTION sTARTS ========= -->
          <section id= "products" class="container">
              
+             
          <h1> Products </h1>
              <p class= "productText"> All the best trainers and collections are exclusive here</p>
              
+             <div class="allTrainers">
+        
                  <article class="productBox">
                     <figure> <img src="Resources/featuredProducts/blackpuma.jpg">
                     <figcaption class="pDetail"> Puma Classic Trainers In Black </figcaption><strong class="price"> £62.00</strong>
@@ -170,7 +191,7 @@
                   
          
          
-         
+         </div>
          </section>
 
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" /> download version used instead-->
@@ -197,8 +218,8 @@
             
     <!-- ========= Contact Section Starts ========= -->
             
-           <div class="containerfilter">
-            <section id="contactPage">
+           <div class="containerFilter">
+            <section id="contactPage" class="container">
             <h1 class="white"> CONTACT </h1>
             
              <p class="contactDescription"> Get in touch with us via our contact form, email or phone number. </p>
@@ -219,5 +240,21 @@
             
             
            </section> 
+               <div id="map"></div>
                </div>
+            
+            
+            
+ <!-- LINKING ALL SCRIPTS MAIN AND EXTERNAL -->           
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            
+             <script src="Resources/js/myscript.js"> </script>
+          <script scr="Resources/js/gmaps.js"></script>
+           
+            
+            
+            
+            
 </body>
+</html>
