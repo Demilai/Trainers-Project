@@ -1,0 +1,40 @@
+<!-- COLLECT A SINGLE NUMBER VALUE FROM THE USER AND DISPLAY ON THE WEBPAGE THE NUMBER ONE LESS AND THE NUMBER ONE MORE THAN THE NUMBER ENTERED -->
+  
+  <!DOCTYPE>
+
+<html>
+    <head>
+        
+        <body>
+            
+              <p> Please enter a number below </p>
+              <form>
+            <input type="number" id="input1"/>
+              </form>
+            <div><button id="button1">Your number + 1 and your number - 1</button></div>
+            
+            <div id="demo"></div>
+        
+        <script>
+            
+             document.getElementById("button1").onclick = function() {
+                 
+                 var amo = document.getElementById("input1").value);
+                 
+            document.getElementById("demo").innerHTML = Math.max(amo + 1, amo -- 1);
+                 
+             }
+            
+            
+            
+  
+                
+        </script>
+            
+            </body>
+            
+        
+    </head>
+
+</html>
+
