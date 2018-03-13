@@ -1,0 +1,167 @@
+ <!DOCTYPE>
+
+<html>
+    <head> <meta http-enquiv="refresh" content="1" /> </head>
+        
+        <body>
+         <p id= "demo"> </p>   
+             
+        <script>
+            
+ // Syntax for a switch statment 
+            
+//            switch (expression)
+//                    
+//                    {
+//                    
+//                      case condition1: statement 
+//                                 break;
+//                    
+//                     case condition2: statement 
+//                                 break;
+//                    
+//                     case condition3: statement 
+//                                 break;
+//                    
+//                     case ....
+//                    // you can have more
+//                    
+//                    default : statement
+//                                      break;
+//                    
+////            }
+////            
+//  
+//            var car = "Mini Cooper";
+//            
+//            document.write("Search has started <br />");
+//            
+//            switch (car)
+//                    {
+//                    
+//                case "Mini Cooper": document.write("Car located <br  />")  
+//                                  break;
+//                    
+//                case "BMW": document.write("Car we are looking for is not BMW <br  />")  
+//                                  break;
+//                    
+//                case "Audi": document.write("Car we are looking for is not an Audi <br  />")
+//                    
+//                case "Range Rover": document.write("Car we are looking for is not a Range Rover <br  />")
+//                    
+//                default: document.write("Car cannot be located")
+//                    
+//                    
+//            }
+                
+            
+            
+     // Create a switch statement that displays the current day and time of the week on the webpage.
+            
+            
+            // variable to store information required 
+            
+            // returns our day
+            var getDays = new Date().getDay();
+            
+            // now we are looking to store our time
+            
+            // returns the hours
+            
+            var getHours = new Date().getHours();
+            
+            var getMinutes = new Date().getMinutes();
+            
+            var getSeconds = new Date().getSeconds();
+            
+            var theTime = "current time is " + getHours + "; " + getMinutes + ";" + getSeconds;
+            
+            var day; 
+            
+            switch (getDays) {
+                    
+                    case 0;
+                     
+                         day = "Sunday"
+                             break;
+                         
+                    case 1;  day = "Monday"
+                             break;
+                    case 2;  day = "Tuesday"
+                             break;
+                    case 3;  day = "Wednesday"
+                             break;
+                    case 4;  day = "Thursday"
+                             break;
+                    case 5;  day = "Friday"
+                             break;
+                    case 6;  day = "Saturday"
+                             break;
+                   
+            
+                           }
+                    
+  document.getElementById("demo").innerHTML = "The day is :" + day + "," theTime;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+//            var day = "Tuesday"
+//            
+//            document.write("Today is ... <br  />");
+//            
+//            switch (day)
+//                    
+//                    {
+//                case "Monday" : document.write("Monday")
+//                                            break;
+//                    
+//                case "Tuesday" : document.write("Tuesday")
+//                                            break;
+//                    
+//                case "Wednesday" : document.write("Wednesday")
+//                                            break;
+//                    
+//                case "Thursday" : document.write("Thursday")
+//                                            break;    
+//                    
+//                case "Friday" : document.write("Friday")
+//                                            break;    
+//                    
+//                case "Saturday" : document.write("Saturday")
+//                                            break;    
+//                    
+//                case "Sunday" : document.write("Sunday")
+//                                            break;    
+//                    
+//                    
+//                    
+//                    var d = new Date();
+//                    var x = document.getElementById("time");
+//                    x.innerHTML = d;
+//            }
+//            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </script>
+            
+            </body>
+        
+</html>
