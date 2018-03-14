@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<!-- Collect three user inputs and allocate them to three members of a new array. Display the array on the webpage. -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+
+<title>Javascript allocate to array</title>
+
+
+
+</head>
+
+<body>
+
+<h1>Javascript - Arrays</h1>
+
+<h2>Input, Create an array and display</h2>
+
+<input id="input1"/>
+
+<input id="input2"/>
+
+<input id="input3"/>
+
+<input type="button" value="Create array" onclick="myarray(input1.value, input2.value, input3.value)"/>
+    
+    <!-- myarray is the name of the parameter and within the brackets are the parameter -->
+   
+    
+<p id="arrayResult"></p><br>
+
+	<p id="arrayresult1"></p><br>
+
+	<p id="arrayresult2"></p>
+
+
+
+<script>
+    
+//   document.getElementById("butwan").onclick = function() {
+//       
+//   var mail = document.getElementById("input1").value;
+//   var hail = document.getElementById("input2").value;
+//   var grail = document.getElementById("input3").value;
+//       
+//       var hi = new Array();
+//            hi[0] = mail;
+//            hi[1] = hail;
+//            hi[2] = grail;
+//       
+//   document.getElementById("arrayresult").innerHTML = mail;
+//   document.getElementById("arrayresult1").innerHTML = hail; 
+//   document.getElementById("arrayresult2").innerHTML = grail;
+       
+function myarray(a,b,c) {
+    
+    var newArray = [];
+    
+        newArray[0] = a;
+        newArray[1] = b;
+        newArray[2] = c;
+    
+        document.getElementById("arrayResult").innerHTML= 
+        newArray;
+    
+    
+}
+    
+    
+ // *bonas* pass the user inputs through the functions parameter     
+       
+    
+	</script>
+
+	</body>
+
+</html>

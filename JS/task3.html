@@ -1,0 +1,62 @@
+<html> 
+    
+<head></head>
+        
+<body>
+<h1> Hey There ! </h1>
+<h2>Type Here</h2>
+
+<input id="place"/>
+
+
+<input type="button" id=button1 value="Push value to array" onclick="lokk(place.value)"/>
+    
+<input type="button" id=button2 value="Shift value to array" onclick="lokk1(place.value)"/>
+    
+<input type="button" id=button3 value="Pop value to array" onclick="lokk2(place.value)"/>
+    
+<input type="button" id=button4 value="Unshift value to array" onclick="lokk3(place.value)"/>
+
+ <p id="result"></p><br>
+ <p id="lengthcounter"></p><br>
+    
+    
+    
+        
+    <script>
+
+var myArray = new Array ();
+function lokk(a) {
+    
+    myArray.push(a);
+    document.getElementById("result").innerHTML = myArray;
+    
+}
+ function lokk1(); {
+        
+    myArray.shift ();
+    document.getElementById("result").innerHTML = myArray;
+     
+ }
+    function popToArray(); {
+        
+    myArray.pop ();
+    document.getElementById("result").innerHTML = myArray;
+    }
+        
+    function unshiftToArray(a); {
+        
+    myArray.unshift (a);
+    document.getElementById("result").innerHTML = myArray;
+  
+    }
+        
+        }
+            
+    </script>
+            
+            
+            
+            
+</body>
+</html>

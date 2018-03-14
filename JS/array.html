@@ -1,0 +1,56 @@
+<html>
+    <head>
+        
+        <body>
+            
+
+        
+        <script>
+   
+   // Syntax for Arrays
+   // is something that lets you store multiple values inside a single variable
+            
+// var nameOfArray = new Array("mini cooper","Ford","Ferrari");
+   
+var garage = new Array();
+garage[0] = "mini cooper";
+garage[1] = "Ford";
+garage[2] = "Ferrari";
+            
+// declared another array outside a var            
+foodArray=["pie","steak","cake"];            
+            
+// add something to the end of the array
+foodArray.push("pizza");
+            
+//foodArray.splice(1);
+            
+// (add after this index, don't remove, "string" )
+            
+foodArray.splice(1,0, "ice cream");
+            
+//foodArray.splice(2,3, "jellies");
+            
+            // shift
+            
+console.log(foodArray.shift() );
+            
+// unshift adds to the beginning and returns the new length of an array
+console.log(foodArray.unshift("sushi") );
+            
+ // pop removes the last element within the array and then returns it
+            
+console.log(foodArray.pop ());
+console.log(foodArray.length);
+// we don't add brackects because its not a method it's a property
+            
+// check the developers console            
+console.log(foodArray);   
+        </script>
+            
+            </body>
+            
+        
+    </head>
+
+</html>

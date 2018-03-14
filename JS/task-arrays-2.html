@@ -1,0 +1,46 @@
+<!-- Collect a user input and allocate it to a new array using the push method.
+
+Display the array and the length of the array (number of elements) using array.length on the webpage -->
+
+<html> 
+    
+<head></head>
+        
+<body>
+<h1> Hey There ! </h1>
+<h2>Type Here</h2>
+
+<input id="place"/>
+
+
+<input type="button" id=button1 value="Push value to array" onclick="pushArray(place.value)"/>
+    
+
+ <p id="result"></p><br>
+ <p id="lengthcounter"></p><br>
+    
+    
+    
+        
+    <script>
+        
+function pushArray(a) {
+    
+    var myArray = new Array ();
+    myArray.push(a);
+        
+        document.getElementById("result").innerHTML = myArray;
+        document.getElementById("lengthcounter").innerHTML = myArray.length;      
+        
+  
+    }
+        
+   
+
+    </script>
+            
+            
+            
+            
+</body>
+</html>
