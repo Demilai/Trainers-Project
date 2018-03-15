@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Hotel Cosmos </h1>
+<p>Martian Database.</p>
+
+<p id="demo"></p>
+
+<script>
+    
+ var planet = {
+    
+     fullName: {
+         
+         firstName: "Minkil",
+         surName: "Chelinur"
+         
+     }
+      
+ }
+ 
+ function sayThankyouComeagain(planet) {
+     
+    document.getElementById("demo").innerHTML = "Thankyou" + " " + "Come" + " " + "Again" + " " + planet.fullName.firstName + " " + planet.fullName.surName;
+     
+     
+     
+ }
+    
+    sayThankyouComeagain(planet);
+    
+</script>
+
+</body>
+</html>

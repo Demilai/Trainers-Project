@@ -1,0 +1,126 @@
+<html>
+<head>
+<title> Objetcs </title>  
+    
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    
+    // an object is a collection of properties and methods
+    // syntax - object
+    
+//    var students = new Object();
+//    
+//    // the [] brackets are an operator takes the students objects and sets the property using String
+//    
+//    students["Firstname"]= "Damian";
+//    students["Surname"]= "Bond";
+//    
+//    console.log(students);
+//    
+//    // create a var to hold students name
+//    var firstNameProperty= "Firstname";
+//    
+//    console.log(students[firstNameProperty]);
+//    
+//    // this is a better way to do the above - as the syntax parser will  understand (both) however, below is best practice
+//    
+//    console.log(students.Firstname);
+//    console.log(students.Surname);
+//    
+//    // we can have an object that sits within our student object
+//    students.address = new Object();
+//    
+//    // The dot. precedence works from left-right which means we can continuously create more
+//    students.address.doorNumber = "60";
+//    students.address.road = "Minories";
+//    students.address.postcode = "EC1 XYZ";
+//    
+//    // The above is sitting within the memory
+//    
+//    console.log(students.address.doorNumber);
+//    console.log(students.address.postcode);
+//    
+//    // below is the better way to do the above 
+//    
+//    console.log(students["address"]["doorNumber"]);
+    
+    var students = {
+        
+      firstName: "Damien",
+      Surname: "Bond",
+        
+      address: { // wherever we add {} the syntax parser will view it as a new object
+          
+          doorNumber: "60",
+          road: "Minories",
+          postcode: "EC1 XYZ"
+          
+         }
+        // javascript will not see the space and treat everything as one line 
+    }
+    
+    function sayHello(students) {
+        
+        console.log("Hello!!" + students.firstName);
+        
+    }
+    
+    sayHello(students);
+    
+    sayHello({firstName: "Simba", Surname: "james"});
+    
+    students.dob = {// the dot can be used to add an object to our student object
+        
+    dayOfBirth: "10",
+    monthOfBirth: "December",
+    yearOfBirth: "1990"
+        
+    }
+    
+    // functions are objects 
+    
+    function greetings() {
+        
+        console.log("Good morning earthlings");
+        
+    }
+    
+    greetings.language = "English";
+    
+    console.log(greetings.language);
+    
+    // An array is a collection of anything
+    
+    var myArray = [
+        
+        1, //Number
+        
+        true, //Boolean
+        
+        {
+            
+           firstName: "Damien", 
+           age: 21 
+        },
+        
+        function(firstName) { //Object (function)
+            
+            var greetings = "Good Afternoon earthling ";
+            
+            console.log(greetings + firstName);
+        },
+        
+        "string"
+    ];
+    
+    console.log(myArray);
+    
+    myArray[3](myArray[2].firstName);
+    
+    
+</script>
+    
+</body>
+</html>

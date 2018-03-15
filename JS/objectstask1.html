@@ -1,0 +1,42 @@
+<!-- Create an object literal with 3 properties return the results do the webpage -->
+
+<html>
+<head>
+<title> Circus </title>  
+    
+</head>
+<body>
+<h1> Hey Folks !</h1>
+
+<p id="demo"></p>
+<script>
+    
+   var preformers = {
+       
+       firstName: "Picco",
+       stageAct: "Contortionist",
+       
+       profileLook: {
+           
+           age: 24,
+           height: 5.9,
+           eyecolour: "green"
+           
+       }
+         
+   }
+   
+   function sayWellDone(preformers) {
+       
+       document.getElementById("demo").innerHTML = "Well" + " " + "Done" + " " + preformers.firstName;
+       
+   }
+    
+    sayWellDone(preformers);
+    
+    
+    
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Hotel Cosmos </h1>
+<p>Martian Database.</p>
+
+<p id="demo"></p>
+
+<script>
+    
+ var activities = {
+    
+     exercise: "Swimming",
+     
+     brunch: {
+         
+         starter: "yoberries",
+         main: "glittertoast",
+         dessert: "unicorn juice"
+         
+     }
+         
+ }
+
+ 
+ function morningFun(activities) {
+     
+    document.getElementById("demo").innerHTML = "Your" + " " + "Morning" + " " + "Menu:" + " " + "                    " + activities.brunch.starter + " "  + activities.brunch.main + " " + activities.brunch.dessert;
+     
+     
+     
+ }
+    
+    morningFun(activities);
+    
+</script>
+
+</body>
+</html>

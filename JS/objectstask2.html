@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Hotel Cosmos </h1>
+<p>Martian Database.</p>
+
+<p id="demo"></p>
+
+<script>
+    
+ var planet = {
+     
+    planetName: "Mars",
+    alienEthnicity: "Anunnaki",
+    firstName: "Lizzoi",
+    surName: "Brezil"
+      
+ }
+ 
+ function sayWelcomToMars(planet) {
+     
+    document.getElementById("demo").innerHTML = "Welcome" + " " + "To" + " " + "Mars" + " " + planet.firstName + " " + planet.surName;
+     
+     
+     
+ }
+    
+    sayWelcomToMars(planet);
+    
+</script>
+
+</body>
+</html>
